@@ -89,10 +89,6 @@ public class Project extends Application {
            reader.close();
             
             return inputStr;
-        
-        
-        
-        
     }
     
     
@@ -109,11 +105,11 @@ public class Project extends Application {
         level[3]="level4.txt";
         level[4]="level5.txt";
                 
-        Scene firstS  = new Scene(createGameBoard(readInput("level1.txt")),TILE_SIZE*4,TILE_SIZE*4); // Creating initial scene
+        Scene firstS  = new Scene(createGameBoard(readInput("level1.txt")),TILE_SIZE*4,TILE_SIZE*4);// Creating initial scene
         
         pointer=primaryStage;//Creating link to primaryStage to change levels.
         
-        primaryStage.setTitle("Level: "+(counter+1)+" Move Count: "+moveCounter+" Total Move: "+moveCount); //Move count and level name set on title.
+        primaryStage.setTitle("Level: "+(counter+1)+" Move Count: "+moveCounter+" Total Move: "+moveCount);//Move count and level name set on title.
         
         primaryStage.setScene(firstS); 
         
